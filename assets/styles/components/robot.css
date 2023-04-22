@@ -1,0 +1,29 @@
+.robotron {
+    background: url(../../img/bgs/bg-robot.png) no-repeat;
+    background-position: center center;
+    flex-basis: 40%;
+    margin: 0;
+    position: relative;
+}
+
+.robot {
+    height: 110%;
+    left: -20%;
+    position: absolute;
+    top: -5%;
+    z-index: 1;
+}
+
+.robot__title {
+    bottom: 7rem;
+    color: rgba(255,255,255,0.8);
+    font-size: 130px;
+    font-weight: 500;
+    left: -3rem;
+    line-height: 0.8;
+    position: absolute;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+}
