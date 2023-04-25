@@ -1,0 +1,15 @@
+.infos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 500px) {
+    
+    .infos {
+        flex-wrap: nowrap;
+        padding: 2rem 0;
+    }
+}

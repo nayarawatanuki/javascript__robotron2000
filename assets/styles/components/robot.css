@@ -1,29 +1,97 @@
 .robotron {
     background: url(../../img/bgs/bg-robot.png) no-repeat;
     background-position: center center;
-    flex-basis: 40%;
+    flex-basis: 20%;
     margin: 0;
     position: relative;
 }
 
 .robot {
-    height: 110%;
-    left: -20%;
+    height: 80vh;
     position: absolute;
+    left: 3%;
     top: -5%;
-    z-index: 1;
 }
 
 .robot__title {
-    bottom: 7rem;
     color: rgba(255,255,255,0.8);
-    font-size: 130px;
+    font-size: 80px;
     font-weight: 500;
-    left: -3rem;
     line-height: 0.8;
-    position: absolute;
+    left: -7%;
+    margin: 0;
+    position: relative;
+    padding: 1rem 0 0 0;
     text-orientation: mixed;
     text-transform: uppercase;
     transform: rotate(180deg);
     writing-mode: vertical-rl;
+}
+
+.robotron__colors {
+    font-size: 1.5rem;
+    padding: 4rem 1.5rem;
+    padding-bottom: 1rem;
+    vertical-align: bottom;
+}
+
+#skins {
+    display: block;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .robot {
+        height: 100vh;
+        left: 20%;
+        top: 1%;
+    }
+    
+    .robot__title {
+        font-size: 130px;
+        padding: 3rem 0 0 0;
+        left: 7%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .robotron {
+        flex-basis: 40%;
+    }
+    
+    .robot {
+        height: 90%;
+        left: 5%;
+        top: 5%;
+        z-index: 1;
+    }
+    
+    .robot__title {
+        bottom: -2rem;
+        left: -.10rem;
+        font-size: 110px;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .robotron {
+        flex-basis: 40%;
+    }
+    
+    .robot {
+        height: 110%;
+        left: 2%;
+        top: -5%;
+        z-index: 1;
+    }
+    
+    .robot__title {
+        bottom: 1rem;
+        left: 2rem;
+        position: absolute;
+    }
 }

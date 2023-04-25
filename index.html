@@ -12,117 +12,141 @@
     </head>
 
     <body>
-        <header></header>
+        <header>
+
+            <form class="robotron__colors">
+                <label for="skins">Escolha a cor do Robotron:</label>
+                <select name="skins" id="skins" data-skin>
+                    <option value=""></option>
+                    <option value="black">Preto</option>
+                    <option value="blue">Azul</option>
+                    <option value="pink">Rosa</option>
+                    <option value="red">Vermelho</option>
+                    <option value="white">Branco</option>
+                    <option value="yellow">Amarelo</option>
+                </select>
+            </form>
+        </header>
         <main>
 
             <section class="robotron">
 
                 <figure>
-                    <img src="assets/img/robotron200/selected/robotron2000.png" alt="" class="robot">
+                    <img src="assets/img/robotron200/default/robotron2000.png" alt="" class="robot">
                     <figcaption class="robot__title">Robotron 2000</figcaption>
                 </figure>
 
             </section>
 
-            <section class="statistics container">
+            <section class="infos">
 
-                <div class="statistic">
-                    <p class="statistic__title">Força</p>
-                    <div class="statistic__value">
-                        <p class="statistic__number">768</p>
+                <section class="statistics">
+    
+                    <div class="container statistics__content">
+    
+                        <div class="statistic">
+                            <p class="statistic__title">Força</p>
+                            <div class="statistic__value">
+                                <p class="statistic__number" data-statistic="strength">0</p>
+                            </div>
+                        </div>
+    
+                        <div class="statistic">
+                            <p class="statistic__title">Poder</p>
+                            <div class="statistic__value">
+                                <p class="statistic__number" data-statistic="power">0</p>
+                            </div>
+                        </div>
+    
+                        <div class="statistic">
+                            <p class="statistic__title">Energia</p>
+                            <div class="statistic__value">
+                                <p class="statistic__number" data-statistic="energy">0</p>
+                            </div>
+                        </div>
+                        
+                        <div class="statistic">
+                            <p class="statistic__title">Velocidade</p>
+                            <div class="statistic__value">
+                                <p class="statistic__number" data-statistic="speed">0</p>
+                            </div>
+                        </div>
+    
                     </div>
-                </div>
-
-                <div class="statistic">
-                    <p class="statistic__title">Poder</p>
-                    <div class="statistic__value">
-                        <p class="statistic__number">630</p>
-                    </div>
-                </div>
-
-                <div class="statistic">
-                    <p class="statistic__title">Energia</p>
-                    <div class="statistic__value">
-                        <p class="statistic__number">289</p>
-                    </div>
-                </div>
-
-                <div class="statistic">
-                    <p class="statistic__title">Velocidade</p>
-                    <div class="statistic__value">
-                        <p class="statistic__number">597</p>
-                    </div>
-                </div>
+                </section>
+    
+                <section class="equipment">
+                    <form action="" class="assembler">
+    
+                        <fieldset class="assembler__content container">
+    
+                            <div class="part">
+                                <label for="" class="part__title">Braços</label>
+        
+                                <div class="control">
+                                    <buttom class="control__adjustment" data-control="-" data-part="arms">-</buttom>
+                                    <input type="text" class="control__counter" data-counter value="00">
+                                    <buttom class="control__adjustment" data-control="+" data-part="arms">+</buttom>
+                                </div>
+                            </div>
+                            <hr class="div-line">
+                            
+                            <div class="part">
+                                <label for="" class="part__title">Blindagem</label>
+        
+                                <div class="control">
+                                    <buttom class="control__adjustment" data-control="-" data-part="armor">-</buttom>
+                                    <input type="text" class="control__counter" data-counter value="00">
+                                    <buttom class="control__adjustment" data-control="+" data-part="armor">+</buttom>
+                                </div>
+                            </div>
+                            <hr class="div-line">
+                            
+                            <div class="part">
+                                <label for="" class="part__title">Núcleos</label>
+        
+                                <div class="control">
+                                    <buttom class="control__adjustment" data-control="-" data-part="cores">-</buttom>
+                                    <input type="text" class="control__counter" data-counter value="00">
+                                    <buttom class="control__adjustment" data-control="+" data-part="cores">+</buttom>
+                                </div>
+                            </div>
+                            <hr class="div-line">
+                            
+                            <div class="part">
+                                <label for="" class="part__title">Pernas</label>
+        
+                                <div class="control">
+                                    <buttom class="control__adjustment" data-control="-" data-part="legs">-</buttom>
+                                    <input type="text" class="control__counter" data-counter value="00">
+                                    <buttom class="control__adjustment" data-control="+" data-part="legs">+</buttom>
+                                </div>
+                            </div>
+                            <hr class="div-line">
+                            
+                            <div class="part">
+                                <label for="" class="part__title">Foguetes</label>
+        
+                                <div class="control">
+                                    <buttom class="control__adjustment" data-control="-" data-part="rockets">-</buttom>
+                                    <input type="text" class="control__counter" data-counter value="00">
+                                    <buttom class="control__adjustment" data-control="+" data-part="rockets">+</buttom>
+                                </div>
+                            </div>
+                            <hr class="div-line">
+                        </fieldset>
+    
+                        
+                        <input type="submit" class="production" id="production" value="Iniciar produção">
+                    </form>
+                </section>
             </section>
 
-            <section class="equipment">
-                <form action="" class="assembler">
-
-                    <fieldset class="assembler__content container">
-
-                        <div class="part">
-                            <label for="" class="part__title">Braços</label>
-    
-                            <div class="control">
-                                <buttom class="control__adjustment">-</buttom>
-                                <input type="text" class="control__counter" value="00">
-                                <buttom class="control__adjustment">+</buttom>
-                            </div>
-                        </div>
-                        <hr class="div-line">
-                        
-                        <div class="part">
-                            <label for="" class="part__title">Blindagem</label>
-    
-                            <div class="control">
-                                <buttom class="control__adjustment">-</buttom>
-                                <input type="text" class="control__counter" value="00">
-                                <buttom class="control__adjustment">+</buttom>
-                            </div>
-                        </div>
-                        <hr class="div-line">
-                        
-                        <div class="part">
-                            <label for="" class="part__title">Núcleos</label>
-    
-                            <div class="control">
-                                <buttom class="control__adjustment">-</buttom>
-                                <input type="text" class="control__counter" value="00">
-                                <buttom class="control__adjustment">+</buttom>
-                            </div>
-                        </div>
-                        <hr class="div-line">
-                        
-                        <div class="part">
-                            <label for="" class="part__title">Pernas</label>
-    
-                            <div class="control">
-                                <buttom class="control__adjustment">-</buttom>
-                                <input type="text" class="control__counter" value="00">
-                                <buttom class="control__adjustment">+</buttom>
-                            </div>
-                        </div>
-                        <hr class="div-line">
-                        
-                        <div class="part">
-                            <label for="" class="part__title">Foguetes</label>
-    
-                            <div class="control">
-                                <buttom class="control__adjustment">-</buttom>
-                                <input type="text" class="control__counter" value="00">
-                                <buttom class="control__adjustment">+</buttom>
-                            </div>
-                        </div>
-                        <hr class="div-line">
-                    </fieldset>
-
-                    
-                    <input type="submit" class="production" id="production" value="Iniciar produção">
-                </form>
-            </section>
 
         </main>
 
         <footer></footer>
+        
+        <script type="module" src="assets/js/app.js"></script>
     </body>
 </html>
