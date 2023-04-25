@@ -56,7 +56,7 @@ Esse projeto contém o objetivo de conhecer e profundar conhecimentos sobre a ma
 </br>
 
 ## :open_file_folder: Acesso ao projeto
-Caso tenha interesse em visualizar o que foi realizado: [Robotron 2000](https://nayarawatanuki.github.io/svg__beach-animate/) 
+Caso tenha interesse em visualizar o que foi realizado: [Robotron 2000](https://nayarawatanuki.github.io/javascript__robotron2000/) 
 
 Ou, caso prefira baixá-lo clicando [aqui](https://github.com/nayarawatanuki/javascript__robotron2000/archive/refs/heads/main.zip).
 
