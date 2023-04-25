@@ -33,10 +33,31 @@
     padding: 4rem 1.5rem;
     padding-bottom: 1rem;
     vertical-align: bottom;
+    width: fit-content;
+}
+
+.robotron__colors label:hover {
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.robotron__colors img {
+    width: 48px;
+}
+
+.robotron__skins {
+    display: none;
 }
 
 #skins {
-    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+    padding: 1em;
+    background: rgba(0,0,0,0.6);
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+    border-left: 5px solid var(--main-cinza);
 }
 
 
